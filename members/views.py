@@ -6,9 +6,16 @@ from .models import Members
 # Create your views here.
 def  members(request):
     template=loader.get_template('base.html')
-    member=Members.objects.all().values()
+    myMembers=Members.objects.all().values()
     context={
-        'member':member
+        'myMembers':myMembers
     }
     return HttpResponse(template.render(context,request))
     
+def details(request,id):
+    myMembers=Members.objects.get(id=id)
+    template=loader.get_template('details.html')
+    context={
+        'myMembers':myMembers,
+    }
+    return HttpResponse(template.render(context,request))

@@ -4,8 +4,8 @@
 <body>
     <h1>Members</h1>
     <ul>
-        {% for member in members %}
-        <li>{{member.firstname}}{{member.lastname}}</li>
+        {% for memberss in myMembers %}
+        <li><a href="details/{{ memberss.id }}">{{memberss.firstname}}{{"   "}}{{memberss.lastname}}</a></li>
         {% endfor %}
     </ul>
 </body>
