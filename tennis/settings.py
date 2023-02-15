@@ -26,6 +26,10 @@ SECRET_KEY = 'django-insecure-=0snwb^1-o-st+q2tpi*9#!ev8lg5sl)6pitzh_hj(1hc#)7r^
 DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
+ADMIN_MEDIA_PREFIX = '/admin-media/'
+
+
+
 
 
 # Application definition
