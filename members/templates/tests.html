@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h1>Hello {{ firstname }}, how are you?</h1>
-
-<p>In views.py you can see how to create the variable.</p>
-<p>In template.html you can see how to use the variable.</p>
+  <ul>
+    {% for x in myMembers %}
+      <li>{{ x.firstname }}</li>
+    {% endfor %}
+  </ul>
 
 </body>
 </html> 
