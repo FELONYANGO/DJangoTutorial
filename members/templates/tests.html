@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <ul>
-    {% for x in myMembers %}
-      <li>{{ x.firstname }}</li>
-    {% endfor %}
-  </ul>
-
-</body>
-</html> 
+<table border='1'>
+  <tr>
+    <th>ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  {% for x in myMembers %}
+    <tr>
+      <td>{{ x.id }}</td>
+        <td>{{ x.firstname }}</td>
+      <td>{{ x.lastname }}</td>
+    </tr>
+  {% endfor %}
+</table>
