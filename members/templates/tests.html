@@ -1,14 +1,12 @@
-<table border='1'>
-  <tr>
-    <th>ID</th>
-    <th>Firstname</th>
-    <th>Lastname</th>
-  </tr>
-  {% for x in myMembers %}
-    <tr>
-      <td>{{ x.id }}</td>
-        <td>{{ x.firstname }}</td>
-      <td>{{ x.lastname }}</td>
-    </tr>
-  {% endfor %}
-</table>
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'universal.css' %}">
+<body>
+
+{% for x in myMembers %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+</body>
+</html>
