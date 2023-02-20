@@ -7,8 +7,9 @@
     <p><a href="/">HOME</a></p>
     <h1>Members</h1>
     <ul>
-        {% for memberss in myMembers %}
-        <li><a href="details/{{ memberss.id }}">{{memberss.firstname}}{{"   "}}{{memberss.lastname}}</a></li>
+        {% for x in myMembers %}
+        
+        <li onclick="window.location = 'details/{{ x.id }}'">{{ x.firstname }}{{"   "}}{{ x.lastname }}</li>
         {% endfor %}
     </ul>
 
