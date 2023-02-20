@@ -1,12 +1,14 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="{% static 'universal.css' %}">
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
 <body>
 
-{% for x in myMembers %}
+{% for x in fruits %}
   <h1>{{ x }}</h1>
 {% endfor %}
 
+<p>In myglobal.css you can see what the stylesheet looks like.</p>
+
 </body>
-</html>
+</html> 
