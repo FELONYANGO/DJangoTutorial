@@ -37,6 +37,7 @@ ADMIN_MEDIA_PREFIX = '/admin-media/'
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap5',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'members',
-    'bootstrap5',
+    
 ]
 
 MIDDLEWARE = [
