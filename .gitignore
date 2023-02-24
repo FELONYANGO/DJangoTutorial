@@ -49,3 +49,5 @@ env/
 
 # Secrets
 secrets.json
+.env
+.environment
